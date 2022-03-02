@@ -1,0 +1,79 @@
+    @charset "UTF-8";
+    @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+    @font-face {
+        font-family: 'miles';
+        src: url(fontes/aAttackGraffiti.otf) format('opentype');
+    }
+    
+    @font-face {
+        font-family: 'aranha';
+        src: url(fontes/Insect\ Icons.ttf) format('truetype');
+    }
+    
+     :root {
+        --fonte-h2-h1: font-family: 'Rowdies', cursive;
+    }
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    header {
+        background-image: linear-gradient(to top, black, red, grey);
+        height: 180px;
+    }
+    
+    h1#principal {
+        font-family: 'miles', serif;
+        color: black;
+        font-size: 3em;
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    h1#principal::after {
+        font-family: 'aranha';
+        font-size: 1.3em;
+        content: ' J';
+    }
+    
+    main {
+        margin: 0px 20px;
+        background-color: #000818;
+        min-width: 380px;
+        margin: auto;
+    }
+    
+    main h1 {
+        text-shadow: 2px 2px 2px black;
+        text-align: center;
+        color: white;
+        padding-top: 20px;
+        font-family: var(--fonte-h2-h1);
+        font-size: 3em;
+    }
+    
+    main h2 {
+        font-family: var(--fonte-h2-h1);
+        font-size: 2em;
+        color: white;
+        padding: 20px;
+    }
+    
+    main img {
+        padding-left: 15px;
+        width: 70%;
+    }
+    
+    main img.pequena {
+        width: 50%;
+    }
+    
+    p {
+        margin-bottom: -5px;
+        font-family: arial, sans-serif;
+        padding: 10px 20px 20px 20px;
+        color: white;
+        line-height: 2em;
+    }
